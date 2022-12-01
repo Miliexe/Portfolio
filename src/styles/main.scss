@@ -1,5 +1,5 @@
 //utils
-
+@import "./utils/variables";
 //vendors
 
 //base
@@ -7,7 +7,7 @@
 //components
 
 //layouts
-
+@import "./layouts/header";
 //pages
-
+@import "./pages/home";
 //themes
