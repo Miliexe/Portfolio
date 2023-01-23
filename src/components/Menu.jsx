@@ -1,6 +1,7 @@
 import React from 'react'
 import Hamburger from 'hamburger-react'
 import { useState } from 'react'
+import Nav from './Nav'
 
 const Menu = () => {
     const [stateCollapse, setStateCollapse] = useState(0)
@@ -14,15 +15,7 @@ const Menu = () => {
                     stateCollapseUpdate()
                 }}
             />
-            {stateCollapse ? (
-                <div className="menu__content">
-                    <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                    </ul>
-                </div>
-            ) : null}
+            {stateCollapse ? <Nav></Nav> : null}
         </div>
     )
 }
