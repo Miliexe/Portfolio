@@ -7,13 +7,14 @@
     position: relative;
     padding: 5px 16px;
     &--open{
-        position: absolute;
+        position: fixed;
         top: 58px;
-        left: 12px;
-        width: 200px;
-        height: 300px;
+        left: 0px;
+        width: 250px;
+        height: 100%;
         background-color: $secondary-bg;
         border: 2px solid $tertiary-bg;
         border-top: 2px solid $secondary-bg;;
+        opacity: .9;
     }
 }
