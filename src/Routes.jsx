@@ -11,10 +11,12 @@ const index = () => {
     return (
         <Router>
             <Header />
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/*" element={<Error404 />} />
-            </Routes>
+            <div className="route">
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/*" element={<Error404 />} />
+                </Routes>
+            </div>
             <Footer />
         </Router>
     )

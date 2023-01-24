@@ -15,7 +15,7 @@ const Menu = () => {
                     stateCollapseUpdate()
                 }}
             />
-            {stateCollapse ? <Nav></Nav> : null}
+            {stateCollapse ? <div className="menu--open"></div> : null}
         </div>
     )
 }
