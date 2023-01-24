@@ -1,22 +1,28 @@
 .home{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    .leftBox{
+    flex-direction: column;
+    .boxes{
         display: flex;
-        flex-direction: column;
-        width: 30%;
-        border: .5px solid $tertiary-bg;
-        border-radius: 13px;
-        padding: 10px 20px;
-        height: min-content;
-    }
+        flex-wrap: nowrap;
+        flex-direction: row;
+        gap:22px;
+        .leftBox{
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            border: .5px solid $tertiary-bg;
+            border-radius: 13px;
+            padding: 10px 20px;
+            height: min-content;
+        }
 
-    .rightBox{
-        display: flex;
-        flex-direction: column;
-        padding: 10px 0px;
-        width: 60%;
+        .rightBox{
+            display: flex;
+            flex-direction: column;
+            padding: 10px 0px;
+            width: 100%;
+        }   
     }
+    
 }

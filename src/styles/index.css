@@ -113,23 +113,28 @@ li {
 .home {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
 }
-.home .leftBox {
+.home .boxes {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  gap: 22px;
+}
+.home .boxes .leftBox {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 500px;
   border: 0.5px solid #21262D;
   border-radius: 13px;
   padding: 10px 20px;
   height: min-content;
 }
-.home .rightBox {
+.home .boxes .rightBox {
   display: flex;
   flex-direction: column;
   padding: 10px 0px;
-  width: 60%;
+  width: 100%;
 }
 
 /*# sourceMappingURL=index.css.map */
