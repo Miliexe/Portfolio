@@ -1,20 +1,38 @@
 .hamburger-react{
-    z-index: 1;
-}
+      z-index: 1;
+    }
 
 .menu{
-    display: flex;
+    display: flex; 
     position: relative;
     padding: 5px 16px;
     &--open{
         position: fixed;
+        padding: 30px;
         top: 58px;
         left: 0px;
         width: 250px;
         height: 100%;
-        background-color: $secondary-bg;
-        border: 2px solid $tertiary-bg;
-        border-top: 2px solid $secondary-bg;;
-        opacity: .9;
+        background-color: $primary-bg;
+        border-top: 2px solid $primary;
+        opacity: .95;
     }
-}
+    &__content{
+      position: absolute;
+      top: 60px;
+      left: 0px;
+      padding: 30px;
+      ul{
+        border-bottom: 1px solid $primary;
+        padding-bottom: 15px;
+        width: 190px;
+      }
+      li{
+        margin: 8px 0px;
+      }
+      a{
+        color: $primary;
+      }
+    }
+  }  
+    
