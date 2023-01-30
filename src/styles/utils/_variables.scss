@@ -1,0 +1,25 @@
+// Colors
+$primary: #FFFFFF; 
+$secondary: #58A6FF;
+$tertiary: #C9D1D9;
+
+// Backgrounds
+$primary-bg: #0D1117;
+$secondary-bg: #161B22;
+$tertiary-bg: #21262D;
+
+// font-weight
+$light: 200;
+$regular: 400;
+$medium: 600;
+
+// Breakpoints
+$mobile: 375px;
+$tablet: 576px;
+$desktop: 992px;
+
+$breakpoints: (
+  mobile: $mobile,
+  tablet: $tablet,
+  desktop: $desktop
+);
