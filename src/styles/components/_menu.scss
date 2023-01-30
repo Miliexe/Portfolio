@@ -6,7 +6,7 @@
     display: flex; 
     position: relative;
     padding: 5px 16px;
-    &--open{
+    &__body{
         position: fixed;
         padding: 30px;
         top: 58px;
@@ -22,6 +22,10 @@
       top: 60px;
       left: 0px;
       padding: 30px;
+      span{
+        color: $primary;
+        font-size: 18px;
+      }
       ul{
         border-bottom: 1px solid $primary;
         padding-bottom: 15px;
@@ -31,7 +35,13 @@
         margin: 8px 0px;
       }
       a{
-        color: $primary;
+        color: darken($primary, 25%);
+        transition: 0.2s;
+        cursor: pointer;
+
+        &:hover {
+          color: $primary;
+        }
       }
     }
   }  

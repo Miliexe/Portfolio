@@ -15,9 +15,10 @@ const Menu = () => {
                 }}
             />
             {stateCollapse ? (
-                <div>
-                    <div className="menu--open"></div>
+                <div className="menu--open">
+                    <div className="menu__body"></div>
                     <div className="menu__content">
+                        <span>Mes réalisations:</span>
                         <ul>
                             <li>
                                 <a

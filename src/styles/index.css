@@ -6,6 +6,8 @@
 
 .route {
   padding: 80px 22px;
+  max-width: 1700px;
+  margin: auto;
 }
 
 body {
@@ -39,16 +41,42 @@ li {
   position: relative;
   padding: 5px 16px;
 }
-.menu--open {
+.menu__body {
   position: fixed;
+  padding: 30px;
   top: 58px;
   left: 0px;
   width: 250px;
   height: 100%;
-  background-color: #161B22;
-  border: 2px solid #21262D;
-  border-top: 2px solid #161B22;
-  opacity: 0.9;
+  background-color: #0D1117;
+  border-top: 2px solid #FFFFFF;
+  opacity: 0.95;
+}
+.menu__content {
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  padding: 30px;
+}
+.menu__content span {
+  color: #FFFFFF;
+  font-size: 18px;
+}
+.menu__content ul {
+  border-bottom: 1px solid #FFFFFF;
+  padding-bottom: 15px;
+  width: 190px;
+}
+.menu__content li {
+  margin: 8px 0px;
+}
+.menu__content a {
+  color: #bfbfbf;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.menu__content a:hover {
+  color: #FFFFFF;
 }
 
 .nav {
