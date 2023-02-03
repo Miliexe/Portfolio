@@ -21,56 +21,32 @@ const Menu = () => {
                         <span>Mes réalisations:</span>
                         <ul>
                             <li>
-                                <a
-                                    href="https://github.com/Miliexe/Kasa#readme"
-                                    target={'_blank'}
-                                    rel="noreferrer"
-                                >
+                                <a href="/project/Kasa" rel="noreferrer">
                                     Kasa
                                 </a>
                             </li>
                             <li>
-                                <a
-                                    href="https://github.com/Miliexe/Piiquante#readme"
-                                    target={'_blank'}
-                                    rel="noreferrer"
-                                >
+                                <a href="/project/Piiquante" rel="noreferrer">
                                     Piiquante
                                 </a>
                             </li>
                             <li>
-                                <a
-                                    href="https://github.com/Miliexe/Kanap#readme"
-                                    target={'_blank'}
-                                    rel="noreferrer"
-                                >
+                                <a href="/project/Kanap" rel="noreferrer">
                                     Kanap
                                 </a>
                             </li>
                             <li>
-                                <a
-                                    href="https://github.com/Miliexe/Panthere_after#readme"
-                                    target={'_blank'}
-                                    rel="noreferrer"
-                                >
+                                <a href="/project/La-Panthere" rel="noreferrer">
                                     La Panthère
                                 </a>
                             </li>
                             <li>
-                                <a
-                                    href="https://github.com/Miliexe/Ohmyfood#readme"
-                                    target={'_blank'}
-                                    rel="noreferrer"
-                                >
+                                <a href="/project/Ohmyfood" rel="noreferrer">
                                     Ohmyfood
                                 </a>
                             </li>
                             <li>
-                                <a
-                                    href="https://github.com/Miliexe/Booki#readme"
-                                    target={'_blank'}
-                                    rel="noreferrer"
-                                >
+                                <a href="/project/Booki" rel="noreferrer">
                                     Booki
                                 </a>
                             </li>
