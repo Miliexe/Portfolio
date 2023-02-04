@@ -2,9 +2,9 @@
   display: flex;
   position: absolute;
   align-self: center;
-  right: 32px;
+  left: 0px;
   top: 18px;
-
+  z-index: 1;
   ul {
     display: flex;
 
