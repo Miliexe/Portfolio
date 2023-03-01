@@ -2,7 +2,7 @@
 
 # Construisez une API sécurisée pour une application d'avis gastronomiques
 
-## Compétences évaluée:
+## Compétences évaluées:
 
 -   Mettre en œuvre des opérations CRUD de manière sécurisée
 -   Stocker des données de manière sécurisée

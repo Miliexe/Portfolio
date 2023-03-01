@@ -2,7 +2,7 @@
 
 # Optimisation d'un site web existant
 
-## Compétences évaluée:
+## Compétences évaluées:
 
 -   Réaliser une recherche des bonnes pratiques en développement web
 -   Optimiser le référencement d'un site web

@@ -2,7 +2,7 @@
 
 # Créez une application web de location immobilière avec React
 
-## Compétences évaluée:
+## Compétences évaluées:
 
 -   Initialiser une application avec Create React App
 -   Configurer la navigation entre les pages de l'application avec React Router

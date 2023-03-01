@@ -2,7 +2,7 @@
 
 # Transformer une maquette en site web
 
-## Compétences évaluée:
+## Compétences évaluées:
 
 -   Implémenter une interface responsive.
 -   Intégrer du contenu conformément à une maquette.

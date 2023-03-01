@@ -2,7 +2,7 @@
 
 # Construisez un site e-commerce en JavaScript
 
-## Compétences évaluée:
+## Compétences évaluées:
 
 -   Créer un plan de test pour une application
 -   Gérer des événements JavaScript
