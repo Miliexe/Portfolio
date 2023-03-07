@@ -1,6 +1,7 @@
 import React from 'react'
 import Hamburger from 'hamburger-react'
 import { useState } from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Menu = () => {
     const [stateCollapse, setStateCollapse] = useState(0)
@@ -20,60 +21,54 @@ const Menu = () => {
                     <div className="menu__content">
                         <span>Mes réalisations:</span>
                         <ul>
-                            <li>
-                                <a
-                                    href="https://github.com/Miliexe/Kasa#readme"
-                                    target={'_blank'}
-                                    rel="noreferrer"
-                                >
-                                    Kasa
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://github.com/Miliexe/Piiquante#readme"
-                                    target={'_blank'}
-                                    rel="noreferrer"
-                                >
-                                    Piiquante
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://github.com/Miliexe/Kanap#readme"
-                                    target={'_blank'}
-                                    rel="noreferrer"
-                                >
-                                    Kanap
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://github.com/Miliexe/Panthere_after#readme"
-                                    target={'_blank'}
-                                    rel="noreferrer"
-                                >
-                                    La Panthère
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://github.com/Miliexe/Ohmyfood#readme"
-                                    target={'_blank'}
-                                    rel="noreferrer"
-                                >
-                                    Ohmyfood
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://github.com/Miliexe/Booki#readme"
-                                    target={'_blank'}
-                                    rel="noreferrer"
-                                >
-                                    Booki
-                                </a>
-                            </li>
+                            <NavLink
+                                to="/project/Kasa"
+                                className={(nav) =>
+                                    nav.isActive ? 'menu--active' : ''
+                                }
+                            >
+                                <li>Kasa</li>
+                            </NavLink>
+                            <NavLink
+                                to="/project/Piiquante"
+                                className={(nav) =>
+                                    nav.isActive ? 'menu--active' : ''
+                                }
+                            >
+                                <li>Piiquante</li>
+                            </NavLink>
+                            <NavLink
+                                to="/project/Kanap"
+                                className={(nav) =>
+                                    nav.isActive ? 'menu--active' : ''
+                                }
+                            >
+                                <li>Kanap</li>
+                            </NavLink>
+                            <NavLink
+                                to="/project/La-Panthere"
+                                className={(nav) =>
+                                    nav.isActive ? 'menu--active' : ''
+                                }
+                            >
+                                <li>La Panthère</li>
+                            </NavLink>
+                            <NavLink
+                                to="/project/Ohmyfood"
+                                className={(nav) =>
+                                    nav.isActive ? 'menu--active' : ''
+                                }
+                            >
+                                <li>Ohmyfood</li>
+                            </NavLink>
+                            <NavLink
+                                to="/project/Booki"
+                                className={(nav) =>
+                                    nav.isActive ? 'menu--active' : ''
+                                }
+                            >
+                                <li>Booki</li>
+                            </NavLink>
                         </ul>
                     </div>
                 </div>

@@ -10,6 +10,9 @@
 @import "./components/nav";
 //layouts
 @import "./layouts/header";
+@import "./layouts/markdown-normalize";
+@import "./layouts/markdown";
 //pages
 @import "./pages/home";
 //themes
+@import "./themes/tsparticles";
