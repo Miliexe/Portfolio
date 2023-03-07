@@ -68,6 +68,9 @@ li {
   font-size: 18px;
 }
 .menu__content ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   border-bottom: 1px solid #FFFFFF;
   padding-bottom: 15px;
   width: 190px;
@@ -82,6 +85,9 @@ li {
 }
 .menu__content a:hover {
   color: #FFFFFF;
+}
+.menu--active li {
+  color: #58A6FF;
 }
 
 .nav {
@@ -243,7 +249,7 @@ li {
   -webkit-text-size-adjust: 100%;
   margin: 0;
   color: var(--color-fg-default);
-  background-color: var(--color-canvas-default);
+  background-color: #0D1117d7;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   font-size: 16px;
   line-height: 1.5;
@@ -1174,6 +1180,21 @@ li {
   filter: invert(50%);
 }
 
+.markdown-body {
+  border: 2px solid #21262D;
+  border-radius: 10px;
+  padding: 15px;
+  margin: auto;
+  max-width: 1000px;
+  background-color: #0D1117d7;
+  justify-content: center;
+}
+@media screen and (min-width: 576px) {
+  .markdown-body {
+    padding: 30px;
+  }
+}
+
 .home {
   display: flex;
   flex-wrap: wrap;
@@ -1199,6 +1220,55 @@ li {
   flex-direction: column;
   padding: 10px 0px;
   width: 100%;
+}
+
+#tsparticles {
+  width: 0px !important;
+  height: 0px !important;
+}
+#tsparticles canvas {
+  position: fixed;
+  z-index: -2;
+  min-width: 900px;
+  min-height: 800px;
+  opacity: 0;
+  animation: fadein 5s infinite;
+  -moz-animation: fadein 5s infinite; /* Firefox */
+  -webkit-animation: fadein 5s 1s forwards; /* Safari et Chrome */
+  -o-animation: fadein 5s infinite; /* Opera */
+  display: inherit;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein { /* sur Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein { /* sur Safari et Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein { /* sur Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
