@@ -32,6 +32,9 @@
         font-size: 18px;
       }
       ul{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
         border-bottom: 1px solid $primary;
         padding-bottom: 15px;
         width: 190px;
@@ -49,5 +52,11 @@
         }
       }
     }
-  }  
-    
+    &--active {
+      li{
+        color: $secondary;
+    }
+      }
+      
+  }
+
