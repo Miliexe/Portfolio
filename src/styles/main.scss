@@ -1,6 +1,7 @@
 //utils
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./utils/keyframes";
 //vendors
 
 //base
@@ -8,6 +9,7 @@
 //components
 @import "./components/menu";
 @import "./components/nav";
+@import "./components/avatar";
 //layouts
 @import "./layouts/header";
 @import "./layouts/markdown-normalize";

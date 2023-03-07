@@ -1,3 +1,35 @@
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein { /* sur Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein { /* sur Safari et Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein { /* sur Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 * {
   padding: 0;
   box-sizing: border-box;
@@ -139,6 +171,61 @@ li {
 @keyframes nav {
   to {
     width: 100%;
+  }
+}
+
+.avatar-container {
+  display: flex;
+  position: absolute;
+  top: 0px;
+  height: 700px;
+  width: 100%;
+  left: 0;
+  z-index: -1;
+  border-radius: 0%;
+  opacity: 0;
+  animation: fadein 3s 1s infinite;
+  -moz-animation: fadein 3s 1s infinite; /* Firefox */
+  -webkit-animation: fadein 3s 1s forwards; /* Safari et Chrome */
+  -o-animation: fadein 3s 1s infinite; /* Opera */
+  display: inherit;
+  background: rgb(13, 17, 23);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.93) 0%, rgba(0, 0, 0, 0.93) 60%, rgba(0, 0, 0, 0.8034188034) 88%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0) 100%, rgb(13, 17, 23) 100%);
+}
+@media screen and (min-width: 576px) {
+  .avatar-container {
+    position: relative;
+    border-radius: 100%;
+    background: rgb(13, 17, 23);
+    background: radial-gradient(circle, rgba(13, 17, 23, 0.9636803874) 0%, rgba(0, 0, 0, 0.803874092) 55%, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0) 100%, rgb(13, 17, 23) 100%);
+    margin: auto;
+    top: 20px;
+    height: 540px;
+    width: 540px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .avatar-container {
+    top: 80px;
+    height: 600px;
+    width: 600px;
+  }
+}
+
+.avatar {
+  display: block;
+  position: absolute;
+  height: 1000px;
+  width: 100%;
+}
+@media screen and (min-width: 576px) {
+  .avatar {
+    top: -40px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .avatar {
+    top: -15px;
   }
 }
 
@@ -1229,46 +1316,14 @@ li {
 #tsparticles canvas {
   position: fixed;
   z-index: -2;
-  min-width: 900px;
+  min-width: 1500px;
   min-height: 800px;
   opacity: 0;
-  animation: fadein 5s infinite;
-  -moz-animation: fadein 5s infinite; /* Firefox */
-  -webkit-animation: fadein 5s 1s forwards; /* Safari et Chrome */
-  -o-animation: fadein 5s infinite; /* Opera */
+  animation: fadein 5s 3s infinite;
+  -moz-animation: fadein 5s 3s infinite; /* Firefox */
+  -webkit-animation: fadein 5s 3s forwards; /* Safari et Chrome */
+  -o-animation: fadein 5s 3s infinite; /* Opera */
   display: inherit;
-}
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-moz-keyframes fadein { /* sur Firefox */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fadein { /* sur Safari et Chrome */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-o-keyframes fadein { /* sur Opera */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 /*# sourceMappingURL=index.css.map */
