@@ -1,0 +1,27 @@
+.error404{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0;
+    animation: fadein 3s 1s infinite;
+    -moz-animation: fadein 3s 1s infinite; /* Firefox */
+    -webkit-animation: fadein 3s 1s  forwards; /* Safari et Chrome */
+    -o-animation: fadein 3s 1s infinite; /* Opera */
+    display: inherit;
+    &__description{
+        position: absolute;
+        bottom: 100px;
+        text-align: center;
+        width: 100%;
+        font-size: 28px;
+    }
+    .error-3d{
+        padding: 200px 0px;
+        @include mq(tablet){
+            padding: 0px 0px;
+        }
+    }
+}
