@@ -1392,8 +1392,6 @@ li {
 #tsparticles canvas {
   position: fixed;
   z-index: -2;
-  min-width: 1500px;
-  min-height: 800px;
   opacity: 0;
   animation: fadein 5s 3s infinite;
   -moz-animation: fadein 5s 3s infinite; /* Firefox */
