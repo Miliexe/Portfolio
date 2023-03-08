@@ -70,6 +70,17 @@ const Menu = () => {
                                 <li>Booki</li>
                             </NavLink>
                         </ul>
+                        <ul>
+                            <NavLink
+                                to="/404"
+                                className={(nav) =>
+                                    nav.isActive ? 'menu--active' : ''
+                                }
+                            >
+                                <br />
+                                <li>404 Not Found</li>
+                            </NavLink>
+                        </ul>
                     </div>
                 </div>
             ) : null}
