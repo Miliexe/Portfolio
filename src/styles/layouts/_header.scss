@@ -1,4 +1,8 @@
 .header{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
     width: 100%;
     height: fit-content;
     background-color: $secondary-bg;
@@ -6,23 +10,23 @@
     position: fixed;
     &__title{
         position: relative;
-        width: 100%;
+        align-self: center;
         h1{
             font-size: 22px;
             font-family: 'Bungee Hairline', cursive;
-            position: absolute;
-            top: 3px;
-            left: 12px;
-            width: 100%;
+            position: relative;
             text-align: center;
+            height: 58px;
+            right: 12px;
+            top: 2px;
             @include mq(tablet){
                 font-size: 30px;
-                top: -6px;
-                left: 0px;
+                top: unset;
+                bottom: 6px;
             }
             @include mq(laptop){
                 font-size: 32px;
-                top: -8px;
+                bottom: 10px;
             }
         }
         

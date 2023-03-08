@@ -1,15 +1,21 @@
 .nav {
   display: flex;
-  position: absolute;
-  align-self: center;
-  left: 0px;
-  top: 18px;
+  position: relative;
   z-index: 1;
+  height: 58px;
+  bottom: 2px;
+  @include mq(laptop){
+    bottom: 4px;
+  }
   ul {
     display: flex;
-
+    align-self: center;
     a {
       margin-left: 22px;
+      font-size: 14px;
+      @include mq(tablet){
+        font-size: 16px;
+      }
       @include mq(laptop){
         margin-left: 30px;
       }
