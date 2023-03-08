@@ -20,7 +20,7 @@
                 top: -6px;
                 left: 0px;
             }
-            @include mq(desktop){
+            @include mq(laptop){
                 font-size: 32px;
                 top: -8px;
             }

@@ -16,10 +16,12 @@ $medium: 600;
 // Breakpoints
 $mobile: 375px;
 $tablet: 576px;
-$desktop: 992px;
+$laptop: 992px;
+$desktop: 1580px;
 
 $breakpoints: (
   mobile: $mobile,
   tablet: $tablet,
+  laptop: $laptop,
   desktop: $desktop
 );

@@ -209,7 +209,7 @@ li {
     width: 540px;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1580px) {
   .avatar-container {
     top: 80px;
     height: 600px;
@@ -228,7 +228,7 @@ li {
     top: -40px;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1580px) {
   .avatar {
     top: -15px;
   }

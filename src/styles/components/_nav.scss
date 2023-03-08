@@ -10,7 +10,7 @@
 
     a {
       margin-left: 22px;
-      @include mq(desktop){
+      @include mq(laptop){
         margin-left: 30px;
       }
 
