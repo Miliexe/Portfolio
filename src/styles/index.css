@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap");
 @keyframes fadein {
   from {
     opacity: 0;
@@ -68,6 +69,10 @@ li {
   position: absolute !important;
   right: 12px;
   z-index: 1;
+  color: #bfbfbf;
+}
+.hamburger-react:hover {
+  color: #FFFFFF;
 }
 
 .menu {
@@ -142,12 +147,12 @@ li {
   }
 }
 .nav ul a li {
-  color: #FFFFFF;
+  color: #bfbfbf;
   transition: 0.2s;
   cursor: pointer;
 }
 .nav ul a li:hover {
-  color: #bfbfbf;
+  color: #FFFFFF;
 }
 .nav--active {
   position: relative;
@@ -156,7 +161,7 @@ li {
   content: "";
   height: 1px;
   width: 0;
-  background: #FFFFFF;
+  background: #bfbfbf;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -235,6 +240,32 @@ li {
   background-color: #161B22;
   border-bottom: 2px solid #21262D;
   position: fixed;
+}
+.header__title {
+  position: relative;
+  width: 100%;
+}
+.header__title h1 {
+  font-size: 22px;
+  font-family: "Bungee Hairline", cursive;
+  position: absolute;
+  top: 3px;
+  left: 12px;
+  width: 100%;
+  text-align: center;
+}
+@media screen and (min-width: 576px) {
+  .header__title h1 {
+    font-size: 30px;
+    top: -6px;
+    left: 0px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .header__title h1 {
+    font-size: 32px;
+    top: -8px;
+  }
 }
 
 @media (prefers-color-scheme: dark) {

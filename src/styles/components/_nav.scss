@@ -15,12 +15,12 @@
       }
 
       li {
-        color: $primary;
+        color: darken($primary, 25%);
         transition: 0.2s;
         cursor: pointer;
 
         &:hover {
-          color: darken($primary, 25%);
+          color: $primary;
         }
       }
     }
@@ -33,7 +33,7 @@
       content: "";
       height: 1px;
       width: 0;
-      background: $primary;
+      background: darken($primary, 25%);
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
