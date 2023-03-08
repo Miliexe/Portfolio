@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/Portfolio/Home/static/css/main.017ce227.css",
-    "main.js": "/Portfolio/Home/static/js/main.3dea1c9b.js",
-    "static/media/avatar.glb": "/Portfolio/Home/static/media/avatar.3db4e271c95cfadf984a.glb",
-    "static/media/404.glb": "/Portfolio/Home/static/media/404.8a3ee0152fbbc5164f0c.glb",
-    "static/media/Panthere.md": "/Portfolio/Home/static/media/Panthere.c8bcbe51915d5ed4becc.md",
-    "static/media/Kanap.md": "/Portfolio/Home/static/media/Kanap.8576233e066857cbd00f.md",
-    "static/media/Piiquante.md": "/Portfolio/Home/static/media/Piiquante.bb8530ad2cf4cad4ff03.md",
-    "static/media/Kasa.md": "/Portfolio/Home/static/media/Kasa.a3b59ce7c4cf7c54ee0e.md",
-    "static/media/Ohmyfood.md": "/Portfolio/Home/static/media/Ohmyfood.9041538155a56ff00449.md",
-    "index.html": "/Portfolio/Home/index.html",
-    "static/media/Booki.md": "/Portfolio/Home/static/media/Booki.858cfa60e0bd08fc585f.md",
-    "main.017ce227.css.map": "/Portfolio/Home/static/css/main.017ce227.css.map",
-    "main.3dea1c9b.js.map": "/Portfolio/Home/static/js/main.3dea1c9b.js.map"
+    "main.css": "/Portfolio/static/css/main.017ce227.css",
+    "main.js": "/Portfolio/static/js/main.534f4f70.js",
+    "static/media/avatar.glb": "/Portfolio/static/media/avatar.3db4e271c95cfadf984a.glb",
+    "static/media/404.glb": "/Portfolio/static/media/404.8a3ee0152fbbc5164f0c.glb",
+    "static/media/Panthere.md": "/Portfolio/static/media/Panthere.c8bcbe51915d5ed4becc.md",
+    "static/media/Kanap.md": "/Portfolio/static/media/Kanap.8576233e066857cbd00f.md",
+    "static/media/Piiquante.md": "/Portfolio/static/media/Piiquante.bb8530ad2cf4cad4ff03.md",
+    "static/media/Kasa.md": "/Portfolio/static/media/Kasa.a3b59ce7c4cf7c54ee0e.md",
+    "static/media/Ohmyfood.md": "/Portfolio/static/media/Ohmyfood.9041538155a56ff00449.md",
+    "index.html": "/Portfolio/index.html",
+    "static/media/Booki.md": "/Portfolio/static/media/Booki.858cfa60e0bd08fc585f.md",
+    "main.017ce227.css.map": "/Portfolio/static/css/main.017ce227.css.map",
+    "main.534f4f70.js.map": "/Portfolio/static/js/main.534f4f70.js.map"
   },
   "entrypoints": [
     "static/css/main.017ce227.css",
-    "static/js/main.3dea1c9b.js"
+    "static/js/main.534f4f70.js"
   ]
 }
