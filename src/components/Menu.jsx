@@ -72,7 +72,7 @@ const Menu = () => {
                         </ul>
                         <ul>
                             <NavLink
-                                to="/404"
+                                to="/Error404"
                                 className={(nav) =>
                                     nav.isActive ? 'menu--active' : ''
                                 }
