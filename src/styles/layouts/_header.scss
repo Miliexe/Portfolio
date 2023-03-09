@@ -9,24 +9,21 @@
     border-bottom: 2px solid $tertiary-bg;
     position: fixed;
     &__title{
-        position: relative;
-        align-self: center;
+        height: 58px;
+        width: 100%;
+        position: absolute;
+        display: flex;
         h1{
             font-size: 22px;
             font-family: 'Bungee Hairline', cursive;
-            position: relative;
             text-align: center;
-            height: 58px;
-            right: 12px;
-            top: 2px;
+            width: 100%;
+            align-self: center;
             @include mq(tablet){
                 font-size: 30px;
-                top: unset;
-                bottom: 6px;
             }
             @include mq(laptop){
                 font-size: 32px;
-                bottom: 10px;
             }
         }
         

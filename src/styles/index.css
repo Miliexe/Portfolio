@@ -77,7 +77,8 @@ li {
 
 .menu {
   display: flex;
-  position: relative;
+  position: absolute;
+  right: 0;
   flex-wrap: wrap;
   height: 58px;
   padding: 5px 16px;
@@ -132,7 +133,7 @@ li {
   position: relative;
   z-index: 1;
   height: 58px;
-  bottom: 2px;
+  bottom: 3px;
 }
 @media screen and (min-width: 992px) {
   .nav {
@@ -244,6 +245,9 @@ li {
     top: -15px;
   }
 }
+.avatar div {
+  z-index: -1;
+}
 
 .header {
   display: flex;
@@ -257,29 +261,26 @@ li {
   position: fixed;
 }
 .header__title {
-  position: relative;
-  align-self: center;
+  height: 58px;
+  width: 100%;
+  position: absolute;
+  display: flex;
 }
 .header__title h1 {
   font-size: 22px;
   font-family: "Bungee Hairline", cursive;
-  position: relative;
   text-align: center;
-  height: 58px;
-  right: 12px;
-  top: 2px;
+  width: 100%;
+  align-self: center;
 }
 @media screen and (min-width: 576px) {
   .header__title h1 {
     font-size: 30px;
-    top: unset;
-    bottom: 6px;
   }
 }
 @media screen and (min-width: 992px) {
   .header__title h1 {
     font-size: 32px;
-    bottom: 10px;
   }
 }
 
@@ -1332,6 +1333,7 @@ li {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  z-index: 0;
 }
 .home .boxes {
   display: flex;
@@ -1378,6 +1380,7 @@ li {
   padding: 0px 20px;
 }
 .error404 .error-3d {
+  cursor: pointer;
   padding: 200px 0px;
 }
 @media screen and (min-width: 576px) {

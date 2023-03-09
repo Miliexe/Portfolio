@@ -9,7 +9,8 @@
     }
 .menu{
     display: flex; 
-    position: relative;
+    position: absolute;
+    right: 0;
     flex-wrap: wrap;
     height: 58px;
     padding: 5px 16px;

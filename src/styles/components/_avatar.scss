@@ -34,7 +34,6 @@ background: linear-gradient(180deg, rgba(0,0,0,0.93) 0%, rgba(0,0,0,0.93) 60%, r
 }
 
 .avatar {
-    
     display: block;
     position: absolute;
     height: 1000px;
@@ -44,5 +43,8 @@ background: linear-gradient(180deg, rgba(0,0,0,0.93) 0%, rgba(0,0,0,0.93) 60%, r
     }
     @include mq(desktop){
         top: -15px;
+    }
+    div{
+        z-index: -1;
     }
 }

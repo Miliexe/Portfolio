@@ -84,7 +84,7 @@ function Avatar() {
                         autoRotate={true}
                         enablePan={false}
                         enableZoom={false}
-                        enableRotate={true}
+                        enableRotate={false}
                     />
                 </Suspense>
             </Canvas>
