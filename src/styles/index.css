@@ -193,32 +193,27 @@ li {
 
 .avatar-container {
   display: flex;
-  position: absolute;
-  top: 0px;
-  height: 700px;
-  width: 100%;
   left: 0;
   z-index: -1;
-  border-radius: 0%;
+  position: relative;
+  border-radius: 100%;
+  background: rgb(13, 17, 23);
+  background: radial-gradient(circle, rgba(13, 17, 23, 0.9636803874) 0%, rgba(0, 0, 0, 0.803874092) 55%, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0) 100%, rgb(13, 17, 23) 100%);
+  margin: auto;
+  height: 340px;
+  width: 340px;
+  overflow: hidden;
   opacity: 0;
   animation: fadein 3s 1s infinite;
   -moz-animation: fadein 3s 1s infinite; /* Firefox */
   -webkit-animation: fadein 3s 1s forwards; /* Safari et Chrome */
   -o-animation: fadein 3s 1s infinite; /* Opera */
-  display: inherit;
-  background: rgb(13, 17, 23);
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.93) 0%, rgba(0, 0, 0, 0.93) 60%, rgba(0, 0, 0, 0.8034188034) 88%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0) 100%, rgb(13, 17, 23) 100%);
 }
 @media screen and (min-width: 576px) {
   .avatar-container {
-    position: relative;
-    border-radius: 100%;
-    background: rgb(13, 17, 23);
-    background: radial-gradient(circle, rgba(13, 17, 23, 0.9636803874) 0%, rgba(0, 0, 0, 0.803874092) 55%, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0) 100%, rgb(13, 17, 23) 100%);
-    margin: auto;
-    top: 20px;
     height: 540px;
     width: 540px;
+    top: 20px;
   }
 }
 @media screen and (min-width: 1580px) {
@@ -232,12 +227,13 @@ li {
 .avatar {
   display: block;
   position: absolute;
-  height: 1000px;
+  height: 550px;
   width: 100%;
 }
 @media screen and (min-width: 576px) {
   .avatar {
     top: -40px;
+    height: 1000px;
   }
 }
 @media screen and (min-width: 1580px) {
@@ -1333,7 +1329,6 @@ li {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  z-index: 0;
 }
 .home .boxes {
   display: flex;
