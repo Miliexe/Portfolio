@@ -19,14 +19,14 @@ const index = () => {
             <Header />
             <div className="route">
                 <Routes>
-                    <Route path="/" element={<Home />} />
+                    <Route path="/Portfolio" element={<Home />} />
                     <Route path="/project/Kasa" element={<Kasa />} />
                     <Route path="/project/Piiquante" element={<Piiquante />} />
                     <Route path="/project/Kanap" element={<Kanap />} />
                     <Route path="/project/La-Panthere" element={<Panthere />} />
                     <Route path="/project/Ohmyfood" element={<Ohmyfood />} />
                     <Route path="/project/Booki" element={<Booki />} />
-                    <Route path="/*" element={<Error404 />} />
+                    <Route path="/Error404" element={<Error404 />} />
                 </Routes>
             </div>
             <Footer />

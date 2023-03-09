@@ -1,3 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap");
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein { /* sur Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein { /* sur Safari et Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein { /* sur Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 * {
   padding: 0;
   box-sizing: border-box;
@@ -36,15 +69,20 @@ li {
   position: absolute !important;
   right: 12px;
   z-index: 1;
+  color: #bfbfbf;
+}
+.hamburger-react:hover {
+  color: #FFFFFF;
 }
 
 .menu {
   display: flex;
-  position: relative;
+  position: absolute;
+  right: 0;
   flex-wrap: wrap;
-  width: 100%;
   height: 58px;
   padding: 5px 16px;
+  align-self: center;
 }
 .menu__body {
   position: fixed;
@@ -92,17 +130,28 @@ li {
 
 .nav {
   display: flex;
-  position: absolute;
-  align-self: center;
-  left: 0px;
-  top: 18px;
+  position: relative;
   z-index: 1;
+  height: 58px;
+  bottom: 3px;
+}
+@media screen and (min-width: 992px) {
+  .nav {
+    bottom: 4px;
+  }
 }
 .nav ul {
   display: flex;
+  align-self: center;
 }
 .nav ul a {
   margin-left: 22px;
+  font-size: 14px;
+}
+@media screen and (min-width: 576px) {
+  .nav ul a {
+    font-size: 16px;
+  }
 }
 @media screen and (min-width: 992px) {
   .nav ul a {
@@ -110,12 +159,12 @@ li {
   }
 }
 .nav ul a li {
-  color: #FFFFFF;
+  color: #bfbfbf;
   transition: 0.2s;
   cursor: pointer;
 }
 .nav ul a li:hover {
-  color: #bfbfbf;
+  color: #FFFFFF;
 }
 .nav--active {
   position: relative;
@@ -124,7 +173,7 @@ li {
   content: "";
   height: 1px;
   width: 0;
-  background: #FFFFFF;
+  background: #bfbfbf;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -142,12 +191,97 @@ li {
   }
 }
 
+.avatar-container {
+  display: flex;
+  position: absolute;
+  top: 0px;
+  height: 700px;
+  width: 100%;
+  left: 0;
+  z-index: -1;
+  border-radius: 0%;
+  opacity: 0;
+  animation: fadein 3s 1s infinite;
+  -moz-animation: fadein 3s 1s infinite; /* Firefox */
+  -webkit-animation: fadein 3s 1s forwards; /* Safari et Chrome */
+  -o-animation: fadein 3s 1s infinite; /* Opera */
+  display: inherit;
+  background: rgb(13, 17, 23);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.93) 0%, rgba(0, 0, 0, 0.93) 60%, rgba(0, 0, 0, 0.8034188034) 88%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0) 100%, rgb(13, 17, 23) 100%);
+}
+@media screen and (min-width: 576px) {
+  .avatar-container {
+    position: relative;
+    border-radius: 100%;
+    background: rgb(13, 17, 23);
+    background: radial-gradient(circle, rgba(13, 17, 23, 0.9636803874) 0%, rgba(0, 0, 0, 0.803874092) 55%, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0) 100%, rgb(13, 17, 23) 100%);
+    margin: auto;
+    top: 20px;
+    height: 540px;
+    width: 540px;
+  }
+}
+@media screen and (min-width: 1580px) {
+  .avatar-container {
+    top: 80px;
+    height: 600px;
+    width: 600px;
+  }
+}
+
+.avatar {
+  display: block;
+  position: absolute;
+  height: 1000px;
+  width: 100%;
+}
+@media screen and (min-width: 576px) {
+  .avatar {
+    top: -40px;
+  }
+}
+@media screen and (min-width: 1580px) {
+  .avatar {
+    top: -15px;
+  }
+}
+.avatar div {
+  z-index: -1;
+}
+
 .header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
   width: 100%;
   height: fit-content;
   background-color: #161B22;
   border-bottom: 2px solid #21262D;
   position: fixed;
+}
+.header__title {
+  height: 58px;
+  width: 100%;
+  position: absolute;
+  display: flex;
+}
+.header__title h1 {
+  font-size: 22px;
+  font-family: "Bungee Hairline", cursive;
+  text-align: center;
+  width: 100%;
+  align-self: center;
+}
+@media screen and (min-width: 576px) {
+  .header__title h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .header__title h1 {
+    font-size: 32px;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -1199,6 +1333,7 @@ li {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  z-index: 0;
 }
 .home .boxes {
   display: flex;
@@ -1222,6 +1357,38 @@ li {
   width: 100%;
 }
 
+.error404 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0;
+  animation: fadein 3s 1s infinite;
+  -moz-animation: fadein 3s 1s infinite; /* Firefox */
+  -webkit-animation: fadein 3s 1s forwards; /* Safari et Chrome */
+  -o-animation: fadein 3s 1s infinite; /* Opera */
+  display: inherit;
+}
+.error404__description {
+  position: absolute;
+  bottom: 100px;
+  text-align: center;
+  width: 100%;
+  font-size: 28px;
+  padding: 0px 20px;
+}
+.error404 .error-3d {
+  cursor: pointer;
+  padding: 200px 0px;
+}
+@media screen and (min-width: 576px) {
+  .error404 .error-3d {
+    padding: 0px 0px;
+  }
+}
+
 #tsparticles {
   width: 0px !important;
   height: 0px !important;
@@ -1229,46 +1396,12 @@ li {
 #tsparticles canvas {
   position: fixed;
   z-index: -2;
-  min-width: 900px;
-  min-height: 800px;
   opacity: 0;
-  animation: fadein 5s infinite;
-  -moz-animation: fadein 5s infinite; /* Firefox */
-  -webkit-animation: fadein 5s 1s forwards; /* Safari et Chrome */
-  -o-animation: fadein 5s infinite; /* Opera */
+  animation: fadein 5s 3s infinite;
+  -moz-animation: fadein 5s 3s infinite; /* Firefox */
+  -webkit-animation: fadein 5s 3s forwards; /* Safari et Chrome */
+  -o-animation: fadein 5s 3s infinite; /* Opera */
   display: inherit;
-}
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-moz-keyframes fadein { /* sur Firefox */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fadein { /* sur Safari et Chrome */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-o-keyframes fadein { /* sur Opera */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 /*# sourceMappingURL=index.css.map */
