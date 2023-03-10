@@ -1,5 +1,6 @@
 import React from 'react'
 import Avatar from '../components/Avatar'
+import Profile from '../components/Profile'
 
 const Home = () => {
     return (
@@ -7,6 +8,7 @@ const Home = () => {
             <div className="avatar-container">
                 <Avatar></Avatar>
             </div>
+            <Profile></Profile>
         </div>
     )
 }

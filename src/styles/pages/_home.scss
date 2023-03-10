@@ -2,6 +2,10 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    @include mq(laptop){
+        flex-direction: row;
+        margin-top: 40px;
+    }
     .boxes{
         display: flex;
         flex-wrap: nowrap;
