@@ -16,6 +16,11 @@
     -webkit-animation: fadein 3s 1s  forwards; /* Safari et Chrome */
     -o-animation: fadein 3s 1s infinite; /* Opera */
     @include mq(tablet){
+        height: 440px;
+        width: 440px;
+        top: 20px;
+    }
+    @include mq(laptop){
         height: 540px;
         width: 540px;
         top: 20px;
@@ -33,6 +38,10 @@
     height: 550px;
     width: 100%;
     @include mq(tablet){
+        top: -30px;
+        height: 800px;
+    }
+    @include mq(laptop){
         top: -40px;
         height: 1000px;
     }
