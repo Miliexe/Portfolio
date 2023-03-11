@@ -7,7 +7,7 @@ const Profile = () => {
     return (
         <div className="profile">
             <h2 className="profile__title">Player: Miliexe</h2>
-            <span className="profile__description">Web Developper</span>
+            <span className="profile__description">Web Developer</span>
             <div className="profile__content">
                 <ul className="profile__section">
                     <h3>Skills:</h3>
@@ -15,7 +15,7 @@ const Profile = () => {
                     <li>SASS</li>
                     <li>HTML5</li>
                     <li>React</li>
-                    <li>Javascript</li>
+                    <li>JavaScript</li>
                 </ul>
                 <ul className="profile__section">
                     <h3>Level:</h3>
