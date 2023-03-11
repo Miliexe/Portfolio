@@ -1,7 +1,6 @@
 .avatar-container{
     display: flex;
     left: 0;
-    z-index: -1;        
     position: relative;
     border-radius: 100%; 
     background: rgb(13,17,23);
@@ -11,10 +10,7 @@
     width: 340px;
     overflow: hidden;
     opacity: 0;
-    animation: fadein 3s 1s infinite;
-    -moz-animation: fadein 3s 1s infinite; /* Firefox */
-    -webkit-animation: fadein 3s 1s  forwards; /* Safari et Chrome */
-    -o-animation: fadein 3s 1s infinite; /* Opera */
+    animation: fadeIn 3s 1s forwards;
     @include mq(tablet){
         height: 440px;
         width: 440px;

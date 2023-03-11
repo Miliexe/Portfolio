@@ -1,37 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-moz-keyframes fadein { /* sur Firefox */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fadein { /* sur Safari et Chrome */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-o-keyframes fadein { /* sur Opera */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 * {
   padding: 0;
   box-sizing: border-box;
@@ -195,7 +163,6 @@ li {
 .avatar-container {
   display: flex;
   left: 0;
-  z-index: -1;
   position: relative;
   border-radius: 100%;
   background: rgb(13, 17, 23);
@@ -205,10 +172,7 @@ li {
   width: 340px;
   overflow: hidden;
   opacity: 0;
-  animation: fadein 3s 1s infinite;
-  -moz-animation: fadein 3s 1s infinite; /* Firefox */
-  -webkit-animation: fadein 3s 1s forwards; /* Safari et Chrome */
-  -o-animation: fadein 3s 1s infinite; /* Opera */
+  animation: fadeIn 3s 1s forwards;
 }
 @media screen and (min-width: 576px) {
   .avatar-container {
@@ -277,10 +241,7 @@ li {
   padding: 20px;
   background-color: #0D1117f5;
   opacity: 0;
-  animation: fadein 3s 3s infinite;
-  -moz-animation: fadein 3s 3s infinite; /* Firefox */
-  -webkit-animation: fadein 3s 3s forwards; /* Safari et Chrome */
-  -o-animation: fadein 3s 3s infinite; /* Opera */
+  animation: fadeIn 3s 3s forwards;
 }
 @media screen and (min-width: 576px) {
   .profile {
@@ -346,6 +307,7 @@ li {
   background-color: #161B22;
   border-bottom: 2px solid #21262D;
   position: fixed;
+  z-index: 999;
 }
 .header__title {
   height: 58px;
@@ -1407,8 +1369,10 @@ li {
   padding: 15px;
   margin: auto;
   max-width: 1000px;
-  background-color: #0D1117d7;
+  background-color: #0D1117f5;
   justify-content: center;
+  opacity: 0;
+  animation: fadeIn 3s 1s forwards;
 }
 @media screen and (min-width: 576px) {
   .markdown-body {
@@ -1457,10 +1421,7 @@ li {
   width: 100%;
   z-index: -1;
   opacity: 0;
-  animation: fadein 3s 1s infinite;
-  -moz-animation: fadein 3s 1s infinite; /* Firefox */
-  -webkit-animation: fadein 3s 1s forwards; /* Safari et Chrome */
-  -o-animation: fadein 3s 1s infinite; /* Opera */
+  animation: fadeIn 3s 1s forwards;
   display: inherit;
 }
 .error404__description {
@@ -1489,10 +1450,7 @@ li {
   position: fixed;
   z-index: -2;
   opacity: 0;
-  animation: fadein 5s 3s infinite;
-  -moz-animation: fadein 5s 3s infinite; /* Firefox */
-  -webkit-animation: fadein 5s 3s forwards; /* Safari et Chrome */
-  -o-animation: fadein 5s 3s infinite; /* Opera */
+  animation: fadeIn 5s 3s forwards;
   display: inherit;
 }
 

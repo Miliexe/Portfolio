@@ -5,9 +5,7 @@ import Profile from '../components/Profile'
 const Home = () => {
     return (
         <div className="home">
-            <div className="avatar-container">
-                <Avatar></Avatar>
-            </div>
+            <Avatar></Avatar>
             <Profile></Profile>
         </div>
     )

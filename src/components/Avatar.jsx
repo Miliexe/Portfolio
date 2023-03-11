@@ -71,23 +71,25 @@ export function Model(props) {
 
 function Avatar() {
     return (
-        <div className="avatar">
-            <Canvas
-                className="avatar-3d"
-                camera={{ fov: 3, position: [0, 0, 90] }}
-            >
-                <Suspense fallback={null}>
-                    <ambientLight />
-                    <directionalLight intensity={2} position={[0, 0, 50]} />
-                    <Model />
-                    <OrbitControls
-                        autoRotate={true}
-                        enablePan={false}
-                        enableZoom={false}
-                        enableRotate={false}
-                    />
-                </Suspense>
-            </Canvas>
+        <div className="avatar-container">
+            <div className="avatar">
+                <Canvas
+                    className="avatar-3d"
+                    camera={{ fov: 3, position: [0, 0, 90] }}
+                >
+                    <Suspense fallback={null}>
+                        <ambientLight />
+                        <directionalLight intensity={2} position={[0, 0, 50]} />
+                        <Model />
+                        <OrbitControls
+                            autoRotate={true}
+                            enablePan={false}
+                            enableZoom={false}
+                            enableRotate={false}
+                        />
+                    </Suspense>
+                </Canvas>
+            </div>
         </div>
     )
 }

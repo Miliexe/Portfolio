@@ -6,10 +6,7 @@
     width: 100%;
     z-index: -1;
     opacity: 0;
-    animation: fadein 3s 1s infinite;
-    -moz-animation: fadein 3s 1s infinite; /* Firefox */
-    -webkit-animation: fadein 3s 1s  forwards; /* Safari et Chrome */
-    -o-animation: fadein 3s 1s infinite; /* Opera */
+    animation: fadeIn 3s 1s forwards;
     display: inherit;
     &__description{
         position: absolute;
