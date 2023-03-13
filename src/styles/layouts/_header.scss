@@ -8,6 +8,7 @@
     background-color: $secondary-bg;
     border-bottom: 2px solid $tertiary-bg;
     position: fixed;
+    z-index: 999;
     &__title{
         height: 58px;
         width: 100%;

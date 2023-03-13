@@ -1,5 +1,4 @@
 import React from 'react'
-import Menu from './Menu'
 import Nav from './Nav'
 
 const Header = () => {
@@ -9,7 +8,6 @@ const Header = () => {
             <div className="header__title">
                 <h1>Émilie Leblanc</h1>
             </div>
-            <Menu></Menu>
         </div>
     )
 }

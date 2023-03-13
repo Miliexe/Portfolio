@@ -5,10 +5,7 @@
         position: fixed;
         z-index: -2;
             opacity: 0;
-            animation: fadein 5s 3s infinite;
-            -moz-animation: fadein 5s 3s infinite; /* Firefox */
-            -webkit-animation: fadein 5s 3s  forwards; /* Safari et Chrome */
-            -o-animation: fadein 5s 3s infinite; /* Opera */
+            animation: fadeIn 5s 3s forwards;
             display: inherit;
     }
 }

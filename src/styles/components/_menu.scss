@@ -25,12 +25,14 @@
         background-color: $primary-bg;
         border-top: 2px solid $primary;
         opacity: .965;
+        overflow: scroll;
     }
     &__content{
-      position: absolute;
-      top: 60px;
-      right: 0px;
-      padding: 30px;
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      padding-bottom: 60px;
       span{
         color: $primary;
         font-size: 18px;

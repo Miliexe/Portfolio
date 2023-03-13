@@ -3,6 +3,7 @@ import ParticlesBackground from './components/ParticlesBackground'
 import Routes from './Routes'
 
 import './styles/index.css'
+import 'animate.css'
 
 function App() {
     return (
