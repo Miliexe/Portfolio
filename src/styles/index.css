@@ -63,12 +63,14 @@ li {
   background-color: #0D1117;
   border-top: 2px solid #FFFFFF;
   opacity: 0.965;
+  overflow: scroll;
 }
 .menu__content {
-  position: absolute;
-  top: 60px;
-  right: 0px;
-  padding: 30px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-bottom: 60px;
 }
 .menu__content span {
   color: #FFFFFF;
@@ -97,7 +99,10 @@ li {
   color: #5FFF69;
 }
 
-.nav {
+.nav-container {
+  display: flex;
+}
+.nav-container .nav {
   display: flex;
   position: relative;
   z-index: 1;
@@ -105,40 +110,40 @@ li {
   bottom: 3px;
 }
 @media screen and (min-width: 992px) {
-  .nav {
+  .nav-container .nav {
     bottom: 4px;
   }
 }
-.nav ul {
+.nav-container .nav ul {
   display: flex;
   align-self: center;
 }
-.nav ul a {
+.nav-container .nav ul a {
   margin-left: 22px;
   font-size: 14px;
 }
 @media screen and (min-width: 576px) {
-  .nav ul a {
+  .nav-container .nav ul a {
     font-size: 16px;
   }
 }
 @media screen and (min-width: 992px) {
-  .nav ul a {
+  .nav-container .nav ul a {
     margin-left: 30px;
   }
 }
-.nav ul a li {
+.nav-container .nav ul a li {
   color: #bfbfbf;
   transition: 0.2s;
   cursor: pointer;
 }
-.nav ul a li:hover {
+.nav-container .nav ul a li:hover {
   color: #FFFFFF;
 }
-.nav--active {
+.nav-container .nav--active {
   position: relative;
 }
-.nav--active::after {
+.nav-container .nav--active::after {
   content: "";
   height: 1px;
   width: 0;
@@ -1373,11 +1378,15 @@ li {
   justify-content: center;
   opacity: 0;
   animation: fadeIn 3s 1s forwards;
+  color: #FFFFFF;
 }
 @media screen and (min-width: 576px) {
   .markdown-body {
     padding: 30px;
   }
+}
+.markdown-body img {
+  background-color: #fff;
 }
 
 .home {
