@@ -17,7 +17,7 @@ const Menu = () => {
                         <div className="menu__content">
                             <span>Mes réalisations:</span>
                             <ul>
-                                <NavLink
+                                {/* <NavLink
                                     to="/project/Kasa"
                                     className={(nav) =>
                                         nav.isActive ? 'menu--active' : ''
@@ -60,9 +60,9 @@ const Menu = () => {
                                     }
                                 >
                                     <li>La Panthère</li>
-                                </NavLink>
+                                </NavLink> */}
                                 <NavLink
-                                    to="/project/Ohmyfood"
+                                    to="https://ohmyfood-lake.vercel.app/"
                                     className={(nav) =>
                                         nav.isActive ? 'menu--active' : ''
                                     }
@@ -72,7 +72,7 @@ const Menu = () => {
                                 >
                                     <li>Ohmyfood</li>
                                 </NavLink>
-                                <NavLink
+                                {/* <NavLink
                                     to="/project/Booki"
                                     className={(nav) =>
                                         nav.isActive ? 'menu--active' : ''
@@ -82,7 +82,7 @@ const Menu = () => {
                                     }
                                 >
                                     <li>Booki</li>
-                                </NavLink>
+                                </NavLink> */}
                             </ul>
                             <ul>
                                 <NavLink

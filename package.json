@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://miliexe.github.io/Portfolio/",
+  "homepage": "https://miliexe.fr/",
   "dependencies": {
     "@react-three/drei": "^9.57.0",
     "@react-three/fiber": "^8.11.9",

@@ -14,6 +14,8 @@
         width: 100%;
         position: absolute;
         display: flex;
+        justify-content: center;
+        padding: 8px;
         h1{
             font-size: 22px;
             font-family: 'Bungee Hairline', cursive;
@@ -27,6 +29,8 @@
                 font-size: 32px;
             }
         }
-        
+        svg{
+            height: 40px;
+        }
     }
 }
