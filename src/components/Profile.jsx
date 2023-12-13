@@ -19,7 +19,6 @@ const Profile = () => {
                 </ul>
                 <ul className="profile__section">
                     <h3>Level:</h3>
-                    <li>Junior</li>
                     <li>Bac+2</li>
                 </ul>
                 <ul className="profile__section flex-end">

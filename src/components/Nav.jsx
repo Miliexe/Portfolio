@@ -13,7 +13,7 @@ const Nav = () => {
             <div className="nav">
                 <ul>
                     <NavLink
-                        to="/Portfolio"
+                        to="/"
                         className={(nav) => (nav.isActive ? 'nav--active' : '')}
                         onClick={() =>
                             stateCollapse
@@ -36,7 +36,7 @@ const Nav = () => {
                             <div className="menu__content">
                                 <span>Mes réalisations:</span>
                                 <ul>
-                                    <NavLink
+                                    {/* <NavLink
                                         to="/project/Kasa"
                                         className={(nav) =>
                                             nav.isActive ? 'menu--active' : ''
@@ -79,9 +79,10 @@ const Nav = () => {
                                         }
                                     >
                                         <li>La Panthère</li>
-                                    </NavLink>
-                                    <NavLink
-                                        to="/project/Ohmyfood"
+                                    </NavLink> */}
+                                    <a
+                                        href="https://ohmyfood-lake.vercel.app/"
+                                        target="_BLANK"
                                         className={(nav) =>
                                             nav.isActive ? 'menu--active' : ''
                                         }
@@ -90,8 +91,8 @@ const Nav = () => {
                                         }
                                     >
                                         <li>Ohmyfood</li>
-                                    </NavLink>
-                                    <NavLink
+                                    </a>
+                                    {/* <NavLink
                                         to="/project/Booki"
                                         className={(nav) =>
                                             nav.isActive ? 'menu--active' : ''
@@ -101,7 +102,7 @@ const Nav = () => {
                                         }
                                     >
                                         <li>Booki</li>
-                                    </NavLink>
+                                    </NavLink> */}
                                 </ul>
                                 <ul>
                                     <NavLink
@@ -114,7 +115,7 @@ const Nav = () => {
                                         }
                                     >
                                         <br />
-                                        <li>404 Not Found</li>
+                                        <li>Coming soon...</li>
                                     </NavLink>
                                 </ul>
                             </div>

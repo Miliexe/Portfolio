@@ -224,9 +224,6 @@ li {
     top: -15px;
   }
 }
-.avatar div {
-  z-index: -1;
-}
 
 .profile {
   display: flex;
@@ -319,6 +316,8 @@ li {
   width: 100%;
   position: absolute;
   display: flex;
+  justify-content: center;
+  padding: 8px;
 }
 .header__title h1 {
   font-size: 22px;
@@ -336,6 +335,9 @@ li {
   .header__title h1 {
     font-size: 32px;
   }
+}
+.header__title svg {
+  height: 40px;
 }
 
 @media (prefers-color-scheme: dark) {

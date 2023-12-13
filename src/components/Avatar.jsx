@@ -1,7 +1,7 @@
 import { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls, useGLTF } from '@react-three/drei'
-import myAvatar from '../asset/avatar.glb'
+import myAvatar from '../asset/avatar_v2.glb'
 
 export function Model(props) {
     const { nodes, materials } = useGLTF(myAvatar)
@@ -29,9 +29,9 @@ export function Model(props) {
                 skeleton={nodes.Wolf3D_Outfit_Top.skeleton}
             />
             <skinnedMesh
-                geometry={nodes.Wolf3D_Hair.geometry}
-                material={materials.Wolf3D_Hair}
-                skeleton={nodes.Wolf3D_Hair.skeleton}
+                geometry={nodes.Wolf3D_Headwear.geometry}
+                material={materials.Wolf3D_Headwear}
+                skeleton={nodes.Wolf3D_Headwear.skeleton}
             />
             <skinnedMesh
                 name="EyeLeft"
