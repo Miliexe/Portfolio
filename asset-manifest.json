@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.d47a8b69.css",
-    "main.js": "/Portfolio/static/js/main.feccf1d4.js",
-    "static/media/avatar_v2.glb": "/Portfolio/static/media/avatar_v2.d67bb806df314fe18343.glb",
-    "static/media/404.glb": "/Portfolio/static/media/404.8a3ee0152fbbc5164f0c.glb",
-    "static/media/Panthere.md": "/Portfolio/static/media/Panthere.c8bcbe51915d5ed4becc.md",
-    "static/media/Kanap.md": "/Portfolio/static/media/Kanap.8576233e066857cbd00f.md",
-    "static/media/Piiquante.md": "/Portfolio/static/media/Piiquante.bb8530ad2cf4cad4ff03.md",
-    "static/media/Kasa.md": "/Portfolio/static/media/Kasa.a3b59ce7c4cf7c54ee0e.md",
-    "static/media/Ohmyfood.md": "/Portfolio/static/media/Ohmyfood.9041538155a56ff00449.md",
-    "static/media/github.svg": "/Portfolio/static/media/github.d4577cfbb9306cfe891b2ac5c1586b8c.svg",
-    "static/media/linkedin.svg": "/Portfolio/static/media/linkedin.63c4f3b35e5ab92c55ce6abfbdf750e3.svg",
-    "index.html": "/Portfolio/index.html",
-    "static/media/Booki.md": "/Portfolio/static/media/Booki.858cfa60e0bd08fc585f.md",
-    "main.d47a8b69.css.map": "/Portfolio/static/css/main.d47a8b69.css.map",
-    "main.feccf1d4.js.map": "/Portfolio/static/js/main.feccf1d4.js.map"
+    "main.css": "/static/css/main.eaf5d026.css",
+    "main.js": "/static/js/main.81a22603.js",
+    "static/media/avatar_v2.glb": "/static/media/avatar_v2.d67bb806df314fe18343.glb",
+    "static/media/404.glb": "/static/media/404.8a3ee0152fbbc5164f0c.glb",
+    "static/media/Panthere.md": "/static/media/Panthere.c8bcbe51915d5ed4becc.md",
+    "static/media/Kanap.md": "/static/media/Kanap.8576233e066857cbd00f.md",
+    "static/media/Piiquante.md": "/static/media/Piiquante.bb8530ad2cf4cad4ff03.md",
+    "static/media/Kasa.md": "/static/media/Kasa.a3b59ce7c4cf7c54ee0e.md",
+    "static/media/Ohmyfood.md": "/static/media/Ohmyfood.9041538155a56ff00449.md",
+    "static/media/github.svg": "/static/media/github.d4577cfbb9306cfe891b2ac5c1586b8c.svg",
+    "static/media/linkedin.svg": "/static/media/linkedin.63c4f3b35e5ab92c55ce6abfbdf750e3.svg",
+    "index.html": "/index.html",
+    "static/media/Booki.md": "/static/media/Booki.858cfa60e0bd08fc585f.md",
+    "main.eaf5d026.css.map": "/static/css/main.eaf5d026.css.map",
+    "main.81a22603.js.map": "/static/js/main.81a22603.js.map"
   },
   "entrypoints": [
-    "static/css/main.d47a8b69.css",
-    "static/js/main.feccf1d4.js"
+    "static/css/main.eaf5d026.css",
+    "static/js/main.81a22603.js"
   ]
 }
