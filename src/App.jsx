@@ -1,8 +1,8 @@
 import React from 'react'
-import ParticlesBackground from './components/ParticlesBackground'
+import ParticlesBackground from './components/ParticlesBackground/ParticlesBackground'
 import Routes from './Routes'
 
-import './styles/index.css'
+import './app.scss'
 import 'animate.css'
 
 function App() {
@@ -15,3 +15,4 @@ function App() {
 }
 
 export default App
+    

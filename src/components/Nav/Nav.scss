@@ -1,0 +1,68 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.nav-container {
+  display: flex;
+  .nav{
+    display: flex;
+    position: relative;
+    z-index: 1;
+    height: 58px;
+    bottom: 3px;
+    @include mq(laptop){
+      bottom: 4px;
+    }
+    ul {
+      display: flex;
+      align-self: center;
+      a {
+        margin-left: 22px;
+        font-size: 14px;
+        @include mq(tablet){
+          font-size: 16px;
+        }
+        @include mq(laptop){
+          margin-left: 30px;
+        }
+
+        li {
+          color: darken($primary, 25%);
+          transition: 0.2s;
+          cursor: pointer;
+
+          &:hover {
+            color: $primary;
+          }
+        }
+      }
+    }
+
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+        height: 1px;
+        width: 0;
+        background: darken($primary, 25%);
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-animation: nav 0.3s ease forwards;
+        animation: nav 0.6s ease forwards;
+
+        @-webkit-keyframes nav {
+          to {
+            width: 100%;
+          }
+        }
+        @keyframes nav {
+          to {
+            width: 100%;
+          }
+        
+        }
+      }
+    }
+  }
+}
