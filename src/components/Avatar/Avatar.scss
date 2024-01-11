@@ -1,0 +1,50 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.avatar-container{
+    display: flex;
+    left: 0;
+    position: relative;
+    border-radius: 100%; 
+    background: rgb(13,17,23);
+    background: radial-gradient(circle, rgba(13,17,23,0.9636803874092009) 0%, rgba(0,0,0,0.8038740920096852) 55%, rgba(255,255,255,0) 70%, rgba(255,255,255,0) 100%, rgba(13,17,23,1) 100%);
+    margin: auto;
+    height: 340px;
+    width: 340px;
+    overflow: hidden;
+    opacity: 0;
+    animation: fadeIn 3s 1s forwards;
+    @include mq(tablet){
+        height: 440px;
+        width: 440px;
+        top: 20px;
+    }
+    @include mq(laptop){
+        height: 540px;
+        width: 540px;
+        top: 20px;
+    }
+    @include mq(desktop){
+        top: 80px;
+        height: 600px;
+        width: 600px;
+    }
+}
+
+.avatar {
+    display: block;
+    position: absolute;
+    height: 550px;
+    width: 100%;
+    @include mq(tablet){
+        top: -30px;
+        height: 800px;
+    }
+    @include mq(laptop){
+        top: -40px;
+        height: 1000px;
+    }
+    @include mq(desktop){
+        top: -15px;
+    }
+}
