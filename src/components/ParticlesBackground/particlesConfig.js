@@ -52,7 +52,7 @@ const particlesConfig = {
                     selectors: [],
                 },
             },
-            connect: { distance: 80, links: { opacity: 0.5 }, radius: 60 },
+            connect: { distance: 80, links: { opacity: 0.5 }, radius: 180 },
             grab: {
                 distance: 100,
                 links: { blink: false, consent: false, opacity: 1 },
@@ -338,7 +338,7 @@ const particlesConfig = {
         },
         links: {
             blink: true,
-            color: { value: '#fff' },
+            color: { value: '#F30125' },
             consent: true,
             distance: 90,
             enable: true,
