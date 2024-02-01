@@ -8,8 +8,8 @@ import './Profile.scss'
 const Profile = () => {
     return (
         <div className="profile">
-            <h2 className="profile__title">Pseudo: Miliexe</h2>
-            <span className="profile__description">Galactic JSX Queen</span>
+            <h2 className="profile__title">Player: Miliexe</h2>
+            <span className="profile__description">FrontEnd React.js</span>
             <div className="profile__content">
                 <h3>Développeuse</h3>
                 <ul className="profile__section profile__section-row">
@@ -26,7 +26,7 @@ const Profile = () => {
                 </ul>
             </div>
             <div className="profile__content">
-                <h3>Capacités</h3>
+                <h3>Objecifs</h3>
                 <ul className="profile__section profile__section-column ">
                     <li>Créer des expériences web mémorables</li>
                     <li>Transformer vos idées en réalité</li>

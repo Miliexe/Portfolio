@@ -76,6 +76,7 @@
         &-column{
             flex-direction: column;
             li{
+                margin-left: 16px;
                 margin-bottom: 8px;
                 list-style-type: circle;
             }
@@ -96,5 +97,5 @@
                 top:13px;
                 right: 25px;
             }
-        }
+    }
 }
