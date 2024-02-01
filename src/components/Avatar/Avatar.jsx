@@ -97,7 +97,9 @@ function Avatar() {
                             autoRotate={true}
                             enablePan={false}
                             enableZoom={false}
-                            enableRotate={false}
+                            enableRotate={true}
+                            minPolarAngle={Math.PI / 2}
+                            maxPolarAngle={Math.PI / 2}
                         />
                     </Suspense>
                 </Canvas>
