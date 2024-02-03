@@ -7,7 +7,10 @@ const Home = () => {
     return (
         <div className="home">
             <Avatar></Avatar>
-            <Profile></Profile>
+            {/* <Profile></Profile> */}
+            <div className="maintenance">
+                <p>Une maintenance est en cours...</p>
+            </div>
         </div>
     )
 }

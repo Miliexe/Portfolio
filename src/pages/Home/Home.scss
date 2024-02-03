@@ -32,4 +32,32 @@
         }   
     }
     
+    .maintenance{
+        text-align: center;
+        width: 100%;
+        margin-top: 25px;
+        @include mq(tablet){
+            margin-top: 45px;
+        }
+        @include mq(desktop){
+            margin-top: 90px;
+        }
+        p{
+            margin: auto;
+            width: fit-content;
+            border-radius: 10px;
+            font-weight: medium;
+            font-family: 'Share Tech Mono', monospace;
+            border: 1px solid $primary;
+            box-shadow: 0 0 5px #000,
+                    0 0 2px $tertiary,
+                    0 0 10px lighten(#000, 30%),
+                    0 0 18px lighten(#000, 20%),
+                    inset 0 0 2px $tertiary; 
+            padding: 15px;
+            background-color: $primary-bg+f5;
+            opacity: 0;
+            animation: fadeIn 3s 3s forwards;
+        }
+    }
 }

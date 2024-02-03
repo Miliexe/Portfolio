@@ -20,11 +20,11 @@ const Nav = () => {
                             stateCollapse ? stateCollapseUpdate : null
                         }
                     >
-                        <li>Accueil</li>
+                        {/* <li>Accueil</li> */}
                     </NavLink>
                 </ul>
             </div>
-            <Menu></Menu>
+            {/* <Menu></Menu> */}
         </div>
     )
 }
